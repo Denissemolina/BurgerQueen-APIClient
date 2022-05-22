@@ -8,17 +8,16 @@ export default function PreparingOrder() {
   const navigate = useNavigate();
   return (
     <div className="admin_preparing">
-     
-        <section id="header_admin">
-          <DateTime />
-          <button
-            id="btn_img_close"
-            onClick={() => navigate("/waiter-dashboard")}
-          >
-            <img id="img_close" src="./close.png" />
-          </button>
-        </section>
-         <section id='container_preparing'>
+      <section id="header_admin">
+        <DateTime />
+        <button
+          id="btn_img_close"
+          onClick={() => navigate("/waiter-dashboard")}
+        >
+          <img id="img_close" src="./close.png" />
+        </button>
+      </section>
+      <section id="container_preparing">
         <h1 style={{ fontSize: "50px" }}>Preparing order..</h1>
 
         <section id="spatul_steam">

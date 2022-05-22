@@ -5,6 +5,7 @@ import { db } from "./../../../libs/Firebase-config";
 
 export default function Employees() {
   const [employee, setEmployee] = useState([]);
+
   const employees = collection(db, "Users");
 
   useEffect(() => {
@@ -16,15 +17,18 @@ export default function Employees() {
       setEmployee(employeeArray);
     });
   }, []);
+
   // let { id } = useParams
 
   return (
     <div>
+      <p>empleadx </p>
       <table>
         <tr>
           <th style={{ width: "180px" }}>Name</th>
           <th style={{ width: "80px" }}>Role</th>
           <th style={{ width: "180px" }}>E-mail</th>
+          {/* {console.log(employee[1])} */}
         </tr>
         <tr>
           {employee.map((user) => (
